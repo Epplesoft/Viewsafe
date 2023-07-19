@@ -18,7 +18,8 @@ You can use this to open images on your computer. <br>
 Opened images will be covered. <br> 
 You can slowly un-cover them.
 
-Folders of images can be loaded. You can click or navigate between them
+Folders of images can be loaded <br>
+You can navigate to look them one by one
 
 
 ## Licensing
