@@ -10,8 +10,9 @@ This is an application for safely viewing pictures
 
 People who must analyse pictures, sometimes must idenfity things they'd rather not see.
 It isn't needed to fully 'see' a picture to identify its content.
+
 When I watch a horror movie, I squint my eyes.
-This program lets you squint your eyes from horror, while using your mouse and keyboard.
+This solution lets you shield your eyes from the bad things.
 
 
 ## Description
