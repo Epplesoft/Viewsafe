@@ -10,13 +10,13 @@ This is an application for safely viewing pictures
 
 People who must analyse pictures, sometimes must identify things they'd rather not see.
 
-When I watch a horror movie, I squint my eyes.
-This solution lets you shield your eyes from the bad things.
+When I watch a horror movie, I squint my eyes.<br>This solution lets you shield your eyes from the bad things.
 
 
 ## Description
-You can use this to open images on your computer <br>
-Opened images will be covered. You can slowly un-cover them
+You can use this to open images on your computer. <br>
+Opened images will be covered. <br> 
+You can slowly un-cover them.
 
 Folders of images can be loaded. You can click or navigate between them
 
