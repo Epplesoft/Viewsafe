@@ -8,10 +8,7 @@ Link: [download](https://github.com/Epplesoft/Viewsafe/raw/main/displayimage_46.
 ## Purpose
 This is an application for safely viewing pictures
 
-People who must analyse pictures, sometimes must idenfity things they'd rather not see.
-
-
-You don't need to see the full picture to identify its content.
+People who must analyse pictures, sometimes must identify things they'd rather not see.
 
 When I watch a horror movie, I squint my eyes.
 This solution lets you shield your eyes from the bad things.
