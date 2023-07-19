@@ -15,7 +15,7 @@ This solution lets you shield your eyes from the bad things.
 
 
 ## Description
-You can use this to open images on your computer \n
+You can use this to open images on your computer <br>
 Opened images will be covered. You can slowly un-cover them
 
 Folders of images can be loaded. You can click or navigate between them
