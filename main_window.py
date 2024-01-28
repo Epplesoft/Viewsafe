@@ -59,10 +59,11 @@ class MainWindow(QtWidgets.QMainWindow):
         self.setWindowTitle("Image Viewer")
         self.setMinimumSize(600, 500)  # Adjust the numbers as needed
 
-
+        # Create the main widget and layout
         self.main_widget = QtWidgets.QWidget(self)
         self.setCentralWidget(self.main_widget)
 
+        # Create the layout for the main widget
         self.layout = QtWidgets.QHBoxLayout(self.main_widget)
         
         # QSplitter for resizable layout
@@ -73,22 +74,28 @@ class MainWindow(QtWidgets.QMainWindow):
         self.image_list.setFixedWidth(200)
         splitter.addWidget(self.image_list)  
 
+        # Button to select folder
         self.folder_button = QPushButton("Select Folder")  
         self.folder_button.clicked.connect(self.select_folder)  
 
+        # Connect the image_selected method to the currentRowChanged signal of the QListWidget
         self.image_list.currentItemChanged.connect(self.image_selected)  
 
+        # Create a widget to display the image
         image_display_widget = QtWidgets.QWidget()
         self.image_layout = QVBoxLayout(image_display_widget)
 
+        # Create a label to display the image
         self.image_label = ClickableLabel(self)
         self.image_label.setAlignment(Qt.AlignCenter)
         self.image_layout.addWidget(self.image_label) 
         self.image_layout.addWidget(self.folder_button)
         splitter.addWidget(image_display_widget)
 
+        # Add the splitter to the main layout
         self.layout.addWidget(splitter)
 
+        # Pixelation
         self.pixelation_layout = QVBoxLayout()  
         self.layout.addLayout(self.pixelation_layout)  
 
@@ -97,6 +104,7 @@ class MainWindow(QtWidgets.QMainWindow):
         self.max_pixelation_label = QLabel("Max")  
         self.pixelation_layout.addWidget(self.max_pixelation_label)  
 
+        # Create a vertical slider
         self.pixelation_slider = QSlider(Qt.Vertical, self)
         self.pixelation_layout.addWidget(self.pixelation_slider)
         self.pixelation_slider.setRange(1, 20)  
@@ -152,12 +160,12 @@ class MainWindow(QtWidgets.QMainWindow):
             if os.path.isfile(default_image):
                 self.add_images([default_image])
 
-
+    # Override the resizeEvent method to update the image when the window is resized
     def resizeEvent(self, event):
         self.update_image()
         super(MainWindow, self).resizeEvent(event)
 
-
+    # Method to load a folder and populate the list with images
     def load_folder(self, folder):
         self.image_directory = folder
         # Filter for common image extensions
@@ -178,6 +186,7 @@ class MainWindow(QtWidgets.QMainWindow):
         if folder:
             self.load_folder(folder)  # Load the folder if one is selected
 
+    # Method to add individual images to the list
     def add_images(self, image_paths):
         self.image_files = image_paths
         self.image_list.clear()
